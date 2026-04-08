@@ -44,7 +44,7 @@ Copy [server/.env.example](/e:/AssignmentPurplemerit/server/.env.example) to `se
 ```env
 PORT=5000
 MONGODB_URI=mongodb://127.0.0.1:27017/stylesync
-CLIENT_URL=http://localhost:5173
+CLIENT_URLS=http://localhost:5173,http://127.0.0.1:4173,http://127.0.0.1:5173
 ```
 
 Create `client/.env` if you want to override the API base URL:
@@ -105,7 +105,7 @@ This Mongo model covers the same functional requirements as the relational versi
 ## Deployment Notes
 
 - Set `VITE_API_URL` in the frontend host to your backend URL + `/api`
-- Set `CLIENT_URL` in the backend host to your frontend URL
+- Set `CLIENT_URLS` in the backend host to your frontend URL
 - Use MongoDB Atlas for the hosted database
 
 ## Known Tradeoffs
